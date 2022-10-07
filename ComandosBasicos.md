@@ -54,4 +54,20 @@ docker container restart <name> <othername>
 docker container stop <name>
 
 ## Create a network
-docker network create --driver bridge <netname>
+docker network create --driver bridge <netname>'
+
+# Create images
+## build image
+docker image build -t <customname> .
+
+## List all images
+docker image ls | docker image ls -a
+
+## launch custom image
+docker run -it --rm --name <customname> -p 3000:3000 nodehello
+
+## create an image from acontainer
+docker commit [CONTAINER_NAME] [IMAGE_NAME]
+
+## Image names and tags
+[your_user_name]/[image_name]:[tag_name]

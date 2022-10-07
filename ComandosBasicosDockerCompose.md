@@ -14,3 +14,6 @@ docker-compose ps
 
 ## Detener los contenedores
 docker-compose down
+
+# Crear dockerfile 
+docker-compose up --build
